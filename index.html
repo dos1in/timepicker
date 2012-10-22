@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="js/timepicker.js"></script>
+
+</head>
+
+<script type="text/javascript">
+    window.onload = function(){
+        var test1 = new Timepicker({
+            cont: "container",
+            name: "time1",
+            showTime : "11:10:59",
+            openSec : true
+        });
+
+        var test2 = new Timepicker({
+            cont: "container2",
+            name: "time2",
+            //showTime : "05:10"//,
+            openSec : true
+        });
+
+        test1.setCompareProps({gObj: test2 , mode: "<"});
+        test2.setCompareProps({gObj: test1 , mode: ">"});
+
+        test1.show();
+        test2.show();
+    };
+
+</script>
+<body>
+
+<div id="container" style="display: inline;"></div>
+<div id="container2" style="display: inline;"></div>
+
+</body>
+</html>

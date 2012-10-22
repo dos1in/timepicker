@@ -1,0 +1,65 @@
+.ssTimepicker {
+    border-collapse: collapse;
+    display: inline-table !important;
+    display: inline;
+    border: #7F9DB9 1px solid;
+    table-layout: fixed !important;
+    table-layout: auto;
+    padding: 0;
+    font: 11px "lucida grande",tahoma,verdana,sans-serif;
+    line-height: 14px;
+}
+
+.ssTimepicker th,td {
+    padding: 0;
+}
+
+.ssTimepicker tr {
+    height:12px;
+}
+
+.ssTimepicker input {
+    font-weight: bold;
+    font-size: 120%;
+    width:20px;
+    border: 0;
+    background: transparent;
+}
+
+.ssTimepicker td div {
+    width:0;height:0;float:left; margin:1px;
+}
+
+.ssTimepicker-upBtn {
+    border-top: none;
+    border-left: 6px dashed transparent;
+    border-right: 6px dashed transparent;
+    border-bottom: 6px solid #6F6F6F;
+    display: block;
+    overflow: hidden;
+}
+
+.ssTimepicker-downBtn {
+    border-top: 6px solid #6F6F6F;
+    border-left: 6px dashed transparent;
+    border-right: 6px dashed transparent;
+    border-bottom: none;
+    display: block;
+    overflow: hidden;
+}
+
+.ssTimepicker-upBtn:hover, .ssTimepicker-downBtn:hover {
+    cursor: pointer;
+    background-color: #444;
+}
+.ssTimepicker-upBtn:hover {
+    border-bottom: 6px solid #DDDDDD;
+}
+
+.ssTimepicker-downBtn:hover {
+    border-top: 6px solid #DDDDDD;
+}
+
+.ssTimepicker-sep {
+    padding: 0 2px;
+}
