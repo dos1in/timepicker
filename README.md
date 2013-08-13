@@ -3,7 +3,7 @@ timepicker
 
 A time picker component built using JavaScript.(时间选择器组件)
 
-Useage
+Usage
 ==========
     var test1 = new Timepicker({
             cont: "container",  // div id
